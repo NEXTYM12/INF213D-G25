@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Item – Inventory Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="INF213 Group 25 Logo" class="logo">
+        <h1>Inventory Management System</h1>
+        <p>INF 213D – Group 25</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="add-item.html">Add Item</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Add New Inventory Item</h2>
+        <form action="#" method="post">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="price">Price (GHS):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label>Item Condition:</label>
+            <input type="radio" id="new" name="condition" value="New">
+            <label for="new">New</label>
+            <input type="radio" id="used" name="condition" value="Used">
+            <label for="used">Used</label>
+
+            <label>Features:</label>
+            <input type="checkbox" id="warranty" name="features" value="Warranty">
+            <label for="warranty">Warranty</label>
+            <input type="checkbox" id="accessory" name="features" value="Accessory Included">
+            <label for="accessory">Accessory Included</label>
+
+            <input type="submit" value="Add Item">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 INF213 Group 25. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
